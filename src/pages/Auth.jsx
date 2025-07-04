@@ -136,7 +136,7 @@ const Auth = () => {
     const top = window.screenY + (window.outerHeight - height) / 2;
 
     const popup = window.open(
-      "https://30hgs8w9-3000.brs.devtunnels.ms/auth/microsoft",
+      "https://uniblock-backend1.onrender.com/auth/microsoft",
       "targetWindow",
       `toolbar=no,
       location=no,
@@ -151,7 +151,7 @@ const Auth = () => {
     );
 
     const receiveMessage = (event) => {
-      if (event.origin === "https://30hgs8w9-3000.brs.devtunnels.ms" && event.data) {
+      if (event.origin === "https://uniblock-backend1.onrender.com" && event.data) {
         sessionStorage.setItem("user", JSON.stringify(event.data));
         popup?.close();
         window.removeEventListener("message", receiveMessage);
