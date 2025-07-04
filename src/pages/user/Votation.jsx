@@ -158,7 +158,7 @@ const Votation = () => {
             <h2 className="text-2xl font-semibold">¡Ocurrió un error!</h2>
             <p className="text-sm sm:text-base">{error || submitError}</p>
             <button
-              onClick={() => navigate("/")}
+              onClick={() => navigate("/user/dashboard")}
               className="mt-2 px-6 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-full transition-all duration-200"
             >
               Volver al inicio
