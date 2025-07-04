@@ -364,7 +364,7 @@ function Step4({ prevStep, formData }) {
 
   const handleCreateElection = async () => {
     try {
-      const response = await fetch("http://localhost:3000/api/votations/create-votation", {
+      const response = await fetch(`${backendUrl}/api/votations/create-votation`, {
         method: "POST",
         credentials: "include", // importante para enviar cookies (token de sesión)
         headers: {
