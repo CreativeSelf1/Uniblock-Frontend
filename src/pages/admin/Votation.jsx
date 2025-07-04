@@ -360,7 +360,8 @@ function Step3({ nextStep, prevStep, formData, setFormData }) {
 }
 
 function Step4({ prevStep, formData }) {
-   const navigate = useNavigate();
+  const navigate = useNavigate();
+  const backendUrl = import.meta.env.VITE_BACKEND_URL; // URL del backend
 
   const handleCreateElection = async () => {
     try {
