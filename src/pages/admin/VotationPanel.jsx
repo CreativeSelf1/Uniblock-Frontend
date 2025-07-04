@@ -32,7 +32,7 @@ const VotationPanel = () => {
 
   const handleEndVotation = async (id) => {
     try {
-      const res = await fetch(`http://localhost:3000/api/vote/send-votes/${id}`, {
+      const res = await fetch(`${backendUrl}/api/vote/send-votes/${id}`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         credentials: "include",
